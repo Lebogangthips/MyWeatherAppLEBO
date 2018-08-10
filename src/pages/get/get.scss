@@ -1,0 +1,38 @@
+page-get {
+
+    .img{
+        background-image: url('../../assets/imgs/ani.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .BTN{
+        width: 85%;
+        left: 7%;
+        position: relative;
+        top: 5;
+        background-color: rgba(143, 137, 137, 0.609);
+        color: white;
+    }
+
+    .btn2{
+        position: absolute;
+        top: 1.5%;
+        left: 77%; 
+        color: white;
+    
+    }
+
+    h3{
+
+        color: white;
+        position: relative;
+        top: 10%;
+    }
+    .grid{
+        border-right: 2px solid white;
+    }
+
+
+}

@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ForecastProvider } from '../../providers/forecast/forecast';
-import { GetPage } from '../get/get';
+
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-get',
+  templateUrl: 'get.html'
 })
-export class HomePage {
+export class GetPage {
 
 
   eg ;
@@ -54,6 +54,9 @@ export class HomePage {
       this.name = data.city.name;
       this.p = this.weatherDAta[0].description;
       this.dt = this.weather[0].dt_txt.substr(0,10);
+
+
+      this.dt1 = this.weather[5].dt_txt.substr(0,10);
 
 
       // this.main1 = this.weather[1].main;

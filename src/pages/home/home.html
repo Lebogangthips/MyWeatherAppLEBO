@@ -1,14 +1,94 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<!-- 
+   <ion-header >
+    <ion-toolbar color="light" >
+      <ion-buttons end (click)="getWeather(cityname.value)">
+        <button ion-button icon-only color="royal">
+          <ion-icon name="search"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-title text-center >Weather</ion-title>
+      <ion-buttons start>
+        <button ion-button icon-only color="royal">
+          <ion-icon name="more"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-toolbar>
+   </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  -->
+  <!-- <ion-header>
+    <ion-navbar>
+    
+          
+   
+
+    </ion-navbar>
+  </ion-header> -->
+
+   
+
+ <ion-content class="bck" padding>
+
+  <ion-item class="BTN" no-lines> 
+   
+    <ion-input placeholder="Search.."  #cityname>4</ion-input>
+  </ion-item>
+    
+    <button  class="btn2" ion-button clear (click)="getWeather(cityname.value)"><ion-icon icon-end name="search" ></ion-icon></button>
+
+  
+     
+
+    
+       
+       
+        {{item}}
+     
+
+        
+     
+    
+  <div class="center">
+
+    
+
+    
+
+    <h1>{{name}}</h1>
+    
+    
+    <P>Today</P>
+
+    <P>{{dt | date:"dd MMMM yyyy"}}</P>
+
+
+
+    <br> <br>
+    <div class="fix">
+    <div class="round"></div>
+    <div class="round"></div>
+    
+    <img class="src" src="{{icon}}" > 
+    </div>
+    <h1 class="h1">{{p}}</h1>
+    <br> <br>
+    <h2>{{temp}}</h2>
+
+    <!-- <img src="../../assets/imgs/celsius.png"> -->
+    <br> 
+    <h3>Humidity <br> {{humidity}}</h3>
+
+<!-- <h3>{{humidity1}}</h3> -->
+
+
+    <!-- <button ion-button (click)="findweather()" ></button> -->
+
+
+    
+    <!-- <button class="get" ion-button outline round (click)="Get()">Get Forecast</button> -->
+  </div>
+
+
+ 
 </ion-content>
+

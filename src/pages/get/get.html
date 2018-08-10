@@ -1,0 +1,59 @@
+<!--
+  Generated template for the GetPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title color="dark" >Get</ion-title>
+  </ion-navbar> 
+
+</ion-header>
+
+
+<ion-content class="img">
+
+
+    <ion-item class="BTN" no-lines> 
+   
+        <ion-input placeholder="Search.."  #cityname>4</ion-input>
+      </ion-item>
+        
+        <button  class="btn2" ion-button clear (click)="getWeather(cityname.value)"><ion-icon icon-end name="search" ></ion-icon></button>
+
+
+        <ion-grid text-center>
+
+            <h1>{{name}}</h1>
+
+            <br><br><br><br><br>
+
+            <P>{{dt1 | date:"dd MMMM yyyy"}}</P>
+
+            <ion-row>
+
+                <ion-col >
+                    <img src="../../assets/imgs/thermometer (1).png">
+                  </ion-col>
+                  <ion-col class="grid">
+                    <img src="../../assets/imgs/humidity (1).png">
+                  </ion-col>
+
+                  <ion-col>
+                      <img class="src" src="{{icon1}}" > 
+                    </ion-col>
+
+            </ion-row>
+
+
+        </ion-grid>
+
+        
+
+  
+
+
+
+</ion-content>
